@@ -1,11 +1,11 @@
 import mongoose from 'mongoose';
-
+import dotenv from 'dotenv';
+dotenv.config();
 
 const DBConnection = async () =>{
 
-    const DB_URI = "mongodb+srv://rajsugamani:linkit1234@linkit.efmge.mongodb.net/?retryWrites=true&w=majority&appName=linkIt";
     try{
-        await mongoose.connect(DB_URI);
+        await mongoose.connect(process.env.MONGO_URI);
         console.log("Database Connected Successfully")
     }
     catch(error){

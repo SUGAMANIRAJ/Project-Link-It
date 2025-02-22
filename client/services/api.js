@@ -1,11 +1,12 @@
 import axios from 'axios';
 
-const API_URL="http://localhost:8000";
+const apiUrl=import.meta.env.VITE_API_URL;
 
 
 export const uploadFile = async (data) =>{
     try{
-       let response = await axios.post(`${API_URL}/upload`,data);
+        console.log(apiUrl);
+       let response = await axios.post(`${apiUrl}/upload`,data);
        return response.data;
 
     }
