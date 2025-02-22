@@ -7,12 +7,12 @@ const app = express();
 const PORT = 8000;
 
 app.use(cors({
-    origin: 'https://project-link-it-ng4l-cuu2wqbwq-sugamanirajs-projects.vercel.app', // Allow only your frontend
+    origin: 'https://project-link-it-wfbu-dqdt2iruq-sugamanirajs-projects.vercel.app', // Allow only your frontend
     methods: 'GET,POST,PUT,DELETE',
     allowedHeaders: 'Content-Type,Authorization'
 }));
 
-app.use(express.json()); // Ensure request body is parsed
+app.use(express.json()); 
 app.use('/', router);
 
 DBConnection();
