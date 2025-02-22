@@ -1,0 +1,166 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #121212;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.app-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 40px;
+}
+
+.upload-box {
+  background: #1e1e1e;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  width: min(80%, 500px);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header {
+  text-align: center;
+  width: 100%;
+  background: #1e1e1e;
+  padding: 15px 0;
+  border-bottom: 2px solid #333;
+  margin-bottom: 50px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #f8f9fa;
+}
+
+.header p {
+  margin-top: 5px;
+  font-size: 1rem;
+  color: #bdbdbd;
+}
+
+.file-input {
+  width: 100%;
+  max-width: 100%;
+  padding: 12px; 
+  font-size: 1rem; 
+  border: 1px solid #444;
+  background: #252525;
+  color: #e0e0e0;
+  border-radius: 8px; 
+  margin-top: 12px;
+  box-sizing: border-box;
+  height: 45px; 
+}
+
+.upload-button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.upload-button:hover {
+  background: #0056b3;
+}
+
+.result-box {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.result-input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #444;
+  background: #252525;
+  color: #e0e0e0;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.copy-button,
+.download-link {
+  flex: 1;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.copy-button {
+  background: #28a745;
+  color: white;
+  border: none;
+}
+
+.copy-button:hover {
+  background: #218838;
+}
+
+.copy-button.copied {
+  background: #ffc107;
+  color: black;
+}
+
+.download-link {
+  background: #dc3545;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.download-link:hover {
+  background: #c82333;
+}
+
+.footer {
+  width: 100%;
+  background: #1e1e1e;
+  padding: 15px 0;
+  border-top: 2px solid #333;
+  color: #bdbdbd;
+  text-align: center;
+  margin-top: auto;
+}
+
+@media (max-width: 480px) {
+  .upload-box {
+   
+    width: min(80%, 500px);
+
+  }
+
+  .file-input {
+    font-size: 1.1rem;
+    padding: 14px;
+    height: 50px;
+  }
+}
