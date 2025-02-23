@@ -100,7 +100,14 @@ const App = () => {
 
           {error && <p className="error-message">{error}</p>}
 
-          <p>Quick Access Id:</p>
+          
+
+          {result && (
+
+            
+            <div className="result-box">
+              
+              <p>Quick Access Id:</p>
               <input
                 type="text"
                 value={resultFileId}
@@ -108,8 +115,6 @@ const App = () => {
                 className="result-input"
               />
 
-          {result && (
-            <div className="result-box">
               <p>File URL:</p>
               <input
                 type="text"
