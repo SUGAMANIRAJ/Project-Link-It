@@ -18,6 +18,14 @@ const fileSchema = new mongoose.Schema({
         type: Number,
         required : true,
         default : 0
+    },
+    cloudinaryId:{
+        type : String,
+        required: true
+    },
+    type:{
+        type : String,
+        required: true
     }
 })
 

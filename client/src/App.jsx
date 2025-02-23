@@ -2,6 +2,10 @@ import React, { useState, useEffect } from "react";
 import { uploadFile } from "../services/api";
 import "./App.css";
 
+
+const apiUrl = import.meta.env.VITE_API_URL;
+
+
 const App = () => {
   const [file, setFile] = useState(null);
   const [uploadedFile, setUploadedFile] = useState(null);
@@ -33,7 +37,7 @@ const App = () => {
         data.append("file", uploadedFile);
 
         let response = await uploadFile(data);
-        setResult(response?.downloadpath || "");
+        setResult(`${apiUrl}/file/${response?.fileId}` || "");
       }
     };
     getImage();
