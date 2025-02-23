@@ -12,14 +12,14 @@ Link It is a simple and secure file-sharing platform that allows users to upload
 ## Tech Stack
 - **Frontend:** React (with Vite)
 - **Backend:** Node.js, Express, MongoDB (Atlas), Cloudinary
-- **Styling:** CSS
+
 
 ## Screenshots
 <p align="center">
-  <img src="./screenshots/LandingPage.jpg" alt="Landing Page" width="300"/>
-  <img src="./screenshots/Uploading.jpg" alt="Uploading File" width="300"/>
-  <img src="./screenshots/GeneratedLink.jpg" alt="Generated Link" width="300"/>
-  <img src="./screenshots/Downloading.jpg" alt="Downloading File" width="300"/>
+  <img src="./screenshots/LandingPage.jpg" alt="Landing Page" width="300"/><br>
+  <img src="./screenshots/Uploading.jpg" alt="Uploading File" width="300"/><br>
+  <img src="./screenshots/GeneratedLink.jpg" alt="Generated Link" width="300"/><br>
+  <img src="./screenshots/Downloading.jpg" alt="Downloading File" width="300"/><br>
   <img src="./screenshots/Liked.jpg" alt="Liked Page" width="300"/>
 </p>
 
@@ -43,6 +43,5 @@ Link It is a simple and secure file-sharing platform that allows users to upload
 - File expiration settings.
 - File preview support.
 
-## License
-This project is licensed under the MIT License.
+
 
