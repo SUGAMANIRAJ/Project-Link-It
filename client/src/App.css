@@ -1,7 +1,7 @@
 .app-container {
   position: relative;
   left: 50%;
-  transform: translateX(-50%) scale(0.65);
+  transform: translateX(-50%) scale(0.85);
   transform-origin: top center;
   display: flex;
   flex-direction: column;
