@@ -80,7 +80,6 @@ const App = () => {
       <div className="app-content">
         <div className="upload-box">
           <h2>Upload & Share</h2>
-          <p>Select a file to upload and share with others instantly.</p>
 
           <input
             type="file"
