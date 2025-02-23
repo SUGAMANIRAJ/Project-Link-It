@@ -22,7 +22,7 @@ const App = () => {
       setUploadedFile(file);
       setFile(null);
       setLoading(true);
-      setError(""); // Clear any previous error
+      setError(""); 
     }
   };
 
@@ -69,7 +69,7 @@ const App = () => {
   return (
     <div className="app-container">
       <header className="header">
-        <img src="../public/infinity.svg" alt="Logo" className="header-logo" />
+        <img src="/infinity.svg" alt="Logo" className="header-logo" />
         <h1>Welcome to Link It</h1>
         <p>
           Your simple and secure file-sharing platform. Easily upload your files
