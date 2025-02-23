@@ -14,11 +14,11 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/"
+      "dest": "/server/index.js"
     }
   ],
   "functions": {
-    "index.js": {
+    "server/index.js": {
       "maxRequestBodySize": "50mb"
     }
   }
