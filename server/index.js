@@ -7,11 +7,16 @@ const app = express();
 const PORT = 8000;
 
 app.use(cors({
-    origin: ['https://project-link-it-wfbu-dqdt2iruq-sugamanirajs-projects.vercel.app','https://project-link-it-wfbu-u2kmgty8t-sugamanirajs-projects.vercel.app',
-             'http://localhost:5173'], 
-
-    methods: 'GET,POST,PUT,DELETE',
-    allowedHeaders: 'Content-Type,Authorization'
+    origin: (origin, callback) => {
+        if (!origin || origin === "http://localhost:5173" || 
+            /^https:\/\/project-link-it-wfbu-.*-sugamanirajs-projects\.vercel\.app$/.test(origin)) {
+            callback(null, true);
+        } else {
+            callback(new Error("Not allowed by CORS"));
+        }
+    },
+    methods: "GET,POST,PUT,DELETE",
+    allowedHeaders: "Content-Type,Authorization"
 }));
 
 
