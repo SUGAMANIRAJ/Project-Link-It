@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { uploadFile } from "../services/api";
-import "./App.css";
+import "/src/App.css";
 
 const apiUrl = import.meta.env.VITE_API_URL;
 
