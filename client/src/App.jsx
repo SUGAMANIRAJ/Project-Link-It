@@ -8,6 +8,7 @@ const App = () => {
   const [file, setFile] = useState(null);
   const [uploadedFile, setUploadedFile] = useState(null);
   const [result, setResult] = useState("");
+  const  [resultFileId, setResultFileId] = useState("");
   const [copied, setCopied] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -53,6 +54,7 @@ const App = () => {
           let response = await uploadFile(data);
           if (response?.fileId) {
             setResult(`${apiUrl}/file/${response.fileId}`);
+            setResultFileId(response.fileId);
           } else {
             setError("Error uploading file. Please try again.");
           }
@@ -98,6 +100,14 @@ const App = () => {
 
           {error && <p className="error-message">{error}</p>}
 
+          <p>Quick Access Id:</p>
+              <input
+                type="text"
+                value={resultFileId}
+                readOnly
+                className="result-input"
+              />
+
           {result && (
             <div className="result-box">
               <p>File URL:</p>
@@ -107,6 +117,12 @@ const App = () => {
                 readOnly
                 className="result-input"
               />
+
+          
+           
+              
+              
+
               <div className="button-group">
                 <button
                   onClick={handleCopy}
